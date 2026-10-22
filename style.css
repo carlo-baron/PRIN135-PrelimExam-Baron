@@ -10,13 +10,14 @@ html {
 body {
   margin: 0;
   /* Task #14 */
-  font-family: "Space Grotesk", "Inter";
+  font-family: "Space Grotesk", sans-serif;
   line-height: 1.5;
   background: #D0CFCF;
   color: #222;
 }
 
 h1, h2, h3 {
+	font-family: "Inter", sans-serif;
   margin-top: 0;
 }
 
