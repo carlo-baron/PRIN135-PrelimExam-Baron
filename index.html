@@ -1,96 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
+
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>PRIN135-PrelimExam</title>
+		<title>PRIN135 - Midterm Exam | Portfolio</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 	</head>
-	<body>
-		<header>
-			<nav>
-				<a href="#profile">Profile</a>		
-				<span aria-hidden="true">|</span>
-				<a href="#skills">Skills</a>		
-				<span aria-hidden="true">|</span>
-				<a href="#education">Education</a>		
-				<span aria-hidden="true">|</span>
-				<a href="#awards">Awards and Achievements</a>		
-				<span aria-hidden="true">|</span>
-				<a href="#contact">Contact Me</a>		
-			</nav>
-		</header>
-		<br>
-		<main>
-			<section id="profile">
-				<img src="https://media.licdn.com/dms/image/v2/D4D03AQFNzjh-_klGoA/profile-displayphoto-scale_200_200/B4DZoeYRelIAAY-/0/1761446271695?e=2147483647&v=beta&t=p-2kKx73Fh0j9GtR2aUxOVKPaxzpIxNsGGTDcGtx_jg" alt="Picture of a Carlo Baron">
-				<h1>Carlo Baron</h1>
-				<div id="info">
-					<a href="mailto:carlobaron430@gmail.com">carlobaron430@gmail.com</a>
-					<span aria-hidden="true">|</span>
-					<a href="tel:+639925867259">09925867259</a>
-					<span aria-hidden="true">|</span>
-					<a href="https://github.com/carlo-baron/PRIN135-PrelimExam-Baron" target="_blank">profile.github.com</a>
+
+	<body id="top">
+
+		<!-- ---------- Navigation ---------- -->
+		<nav class="site-nav">
+			<div class="nav-inner">
+				<a href="#top" class="nav-brand">Portfolio</a>
+				<ul class="nav-links">
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#education">Education</a></li>
+					<li><a href="#achievements">Achievements</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- ---------- Header ---------- -->
+		<header class="site-header">
+			<div class="header-inner clearfix">
+
+				<div class="photo-box">
+					<div class="photo-frame">
+						<!-- Replace the image with your own profile picture -->
+						<img class="photo" src="carlo.jpg" alt="Profile picture of Carlo Baron">
+					</div>
 				</div>
-				<p id="summary">I am a hardworking person. I never give up on solving problems. Hire me and I will double your profit.</p>
-			</section>
-			<section id="skills">
+
+				<div class="header-text">
+					<h1 class="name">Carlo Baron</h1>
+					<ul class="header-links">
+						<li><a href="tel:+639123456789">+63 992 586 7258</a></li>
+						<li><a href="mailto:baron2433049@mls.ceu.edu.ph">baron2433049@mls.ceu.edu.ph</a></li>
+						<li><a href="https://github.com/carlo-baron" target="_blank" rel="noopener noreferrer">GitHub</a>
+						</li>
+					</ul>
+					<p class="profile">
+						I am a hardworking person. I never give up on solving problems. Hire me and I will double your profit.
+					</p>
+				</div>
+
+			</div>
+		</header>
+
+		<main class="wrapper">
+
+			<!-- ---------- Skills ---------- -->
+			<section id="skills" class="card">
 				<h2>Skills</h2>
-				<ul>
-					<li>Programming</li>	
-					<li>Problem Solving</li>	
-					<li>Communication</li>	
+				<ul class="skill-list">
+					<li>HTML5</li>
+					<li>CSS3</li>
+					<li>JavaScript</li>
+					<li>Responsive Web Design</li>
+					<li>Git & GitHub</li>
+					<li>UI Design</li>
+					<li>Problem Solving</li>
+					<li>Teamwork</li>
 				</ul>
 			</section>
-			<section id="education">
+
+			<!-- ---------- Education ---------- -->
+			<section id="education" class="card">
 				<h2>Education</h2>
-				<ol>
-					<li>Pinalagdan Elementary School</li>	
-					<li>Paombong High School</li>	
-					<li>Bulacan Ecumenical School</li>	
-					<li>Centro Escolar University</li>	
-				</ol>
+
+				<div class="entry">
+					<span class="entry-year">2024 - Present</span>
+					<h3>Bachelor of Science in Information Technology</h3>
+					<p class="entry-school">Central Escolar University, Malolos</p>
+				</div>
+
+				<div class="entry">
+					<span class="entry-year">2022 - 2024</span>
+					<h3>Senior High School - STEM Strand</h3>
+					<p class="entry-school">Bulacan Ecumenical School</p>
+				</div>
+
+				<div class="entry">
+					<span class="entry-year">2018 - 2022</span>
+					<h3>Junior High School</h3>
+					<p class="entry-school">Paombong High School Incorporated</p>
+				</div>
+
+				<div class="entry">
+					<span class="entry-year">2012 - 2018</span>
+					<h3>Elementary School</h3>
+					<p class="entry-school">Pinalagdan Elementary School</p>
+				</div>
 			</section>
-			<section id="awards">
-				<h2>Awards and Achievements</h2>
-				<ol>
-					<li>2025 Sportsfest Table Tennis Singles 1st Runner Up</li>	
-					<li>2026 Sportsfest Table Tennis Singles 1st Runner Up</li>	
-					<li>2026 Sportsfest Table Tennis Doubles Champion</li>	
-					<li>GitHub Project Collaborator 2026</li>
-				</ol>
+
+			<!-- ---------- Achievements ---------- -->
+			<section id="achievements" class="card">
+				<h2>Achievements</h2>
+				<ul class="achievement-list">
+					<li>
+						<strong>2nd place, Table Tennis Singles</strong> - Sportsfest, A.Y. 2024-2025
+					</li>
+					<li>
+						<strong>2nd Place, Table Tennis Singles</strong> - Sportsfest, A.Y 2025 - 2026
+					</li>
+					<li>
+						<strong>1st Place, Table Tennis Doubles</strong> - Sportsfest, A.Y 2025 - 2026
+					</li>
+					<li>
+						<strong>Dean's Lister</strong> - 2024 - Present 
+					</li>
+				</ul>
 			</section>
-			<section id="contact">
-				<h2 id="contact-header">Contact Me</h2>
-				<form action="#" method="post" aria-describedby="Form for contacting Carlo Baron">
-					<div>
-						<label for="name">Name:</label><br/>
-						<input id="name" type="text" maxlength="25" placeholder="John Doe" required>
+
+			<!-- ---------- Contact me ---------- -->
+			<section id="contact" class="card">
+				<h2>Contact Me</h2>
+				<form class="contact-form" action="#" method="post">
+					<div class="form-row clearfix">
+						<div class="field field-left">
+							<label for="name">Name</label>
+							<input type="text" id="name" name="name" placeholder="Your name" required>
+						</div>
+
+						<div class="field field-right">
+							<label for="email">Email</label>
+							<input type="email" id="email" name="email" placeholder="you@example.com" required>
+						</div>
 					</div>
-					<div>
-						<label for="email">Email:</label><br/>
-						<input id="email" type="email" maxlength="25" placeholder="johndoe@email.com" required>
-					</div>
-					<div>
-						<label for="message">Message:</label><br/>
-						<textarea id="message" rows="3" maxlength="255" placeholder="Enter your message here." required></textarea>
-					</div>
-					<button aria-labelledby="contact-header" type="submit">Contact Me</button>
+
+					<label for="message">Message</label>
+					<textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+
+					<button type="submit">Send Message</button>
 				</form>
 			</section>
+
 		</main>
-		<br>
-		<footer>
-			<nav>
-				<a href="#profile">Profile</a>		
-				<span aria-hidden="true">|</span>
-				<a href="#skills">Skills</a>		
-				<span aria-hidden="true">|</span>
-				<a href="#education">Education</a>		
-				<span aria-hidden="true">|</span>
-				<a href="#awards">Awards and Achievements</a>		
-				<span aria-hidden="true">|</span>
-				<a href="#contact">Contact Me</a>		
-			</nav>
+
+		<!-- ---------- Footer ---------- -->
+		<footer class="site-footer">
+			<p class="footer-name">Carlo Baron &middot; Portfolio</p>
+			<a href="#top" class="back-to-top">Back to top &uarr;</a>
 		</footer>
+
 	</body>
+
 </html>
